@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
+
     <nav>
-      <div class="batteryContainer"><span id="battery-level"></span>% </div>
+      <div class="batteryContainer">
+        <span id="battery-level"></span>%
+        <img src="./battery-icon.svg" alt="Battery icon" />
+      </div>
+      <img src="./wifi-icon.svg" alt="wifi icon" />
+
       <div id="date"></div>
     </nav>
     <div class="loginContainer">
       <div class="pic"></div>
       <h2>Shivam</h2>
 
-      <input name="" id="" placeholder="Enter Password" />
+      <div class="input">
+        <span></span>
+        <input type="password" name="" id="password" placeholder="Enter Password" />
+      </div>
     </div>
+  </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="main.js" type="module"></script>
   </body>

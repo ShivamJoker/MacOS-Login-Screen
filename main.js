@@ -1,6 +1,8 @@
 
 const dateInput = document.getElementById("date")
 const batteryLevel = document.getElementById("battery-level");
+const passwordInput = document.getElementById("password")
+const body = document.querySelector("body")
 
 //get battery percentage
 navigator.getBattery().then((battery) => {
@@ -27,3 +29,7 @@ navigator.getBattery().then((battery) => {
 
 //set date
 dateInput.innerText = moment().format("ddd D MMM h:mm A");
+
+passwordInput.addEventListener('click', ()=>{
+ body.requestFullscreen()
+})
