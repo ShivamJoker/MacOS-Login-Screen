@@ -27,8 +27,12 @@ navigator.getBattery().then((battery) => {
 });
 
 
-//set date
+setInterval(() => {
+  //set date
 dateInput.innerText = moment().format("ddd D MMM h:mm A");
+}, 1000);
+
+
 
 passwordInput.addEventListener('click', ()=>{
  body.requestFullscreen()
