@@ -15,8 +15,8 @@ body {
 }
 
 main {
-  background: url(./day.jpg);
-  /* background: url(./original.png); */
+  background: url(./images/day.jpg);
+  /* background: url(./images/original.png); */
   background-position: center;
   height: 100%;
   background-size: cover;
@@ -43,7 +43,7 @@ h3 {
 .loginContainer .pic {
   height: 100px;
   width: 100px;
-  background: url(./penguin.jpeg);
+  background: url(./images/penguin.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 150%;
