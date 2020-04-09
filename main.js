@@ -7,12 +7,7 @@ const body = document.querySelector("body")
 //get battery percentage
 navigator.getBattery().then((battery) => {
   const showBatteryLeve = () => {
-    let level = battery.level;
-    if (level < 1) {
-      level = level.toString().slice(2, 4);
-    } else {
-      level = 100;
-    }
+    let level = battery.level * 100;
     batteryLevel.innerText = level;
   };
 
