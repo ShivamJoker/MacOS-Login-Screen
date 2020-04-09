@@ -8,26 +8,36 @@
   </head>
   <body>
     <main>
+      <nav>
+        <div class="batteryContainer">
+          <span id="battery-level"></span>%
+          <img src="./battery-icon.svg" alt="Battery icon" />
+        </div>
+        <img src="./wifi-icon.svg" alt="wifi icon" />
 
-    <nav>
-      <div class="batteryContainer">
-        <span id="battery-level"></span>%
-        <img src="./battery-icon.svg" alt="Battery icon" />
+        <div id="date"></div>
+      </nav>
+      <div class="loginContainer">
+        <div class="pic"></div>
+        <h3>Shivam</h3>
+
+        <div class="input">
+          <span></span>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Enter Password"
+          />
+        </div>
       </div>
-      <img src="./wifi-icon.svg" alt="wifi icon" />
-
-      <div id="date"></div>
-    </nav>
-    <div class="loginContainer">
-      <div class="pic"></div>
-      <h2>Shivam</h2>
-
-      <div class="input">
-        <span></span>
-        <input type="password" name="" id="password" placeholder="Enter Password" />
+      <div class="cancel">
+        <div class="button">
+          <img src="./delete-button.svg" alt="delete button" />
+        </div>
+       <span>Cancel</span> 
       </div>
-    </div>
-  </main>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="main.js" type="module"></script>

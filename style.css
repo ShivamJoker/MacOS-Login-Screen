@@ -9,25 +9,27 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "SF", "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 main {
   background: url(./day.jpg);
-  /* background: url(./original.png); */
+  background: url(./original.png);
   background-position: center;
   height: 100%;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-h2 {
-  color: #fff;
+h3 {
   font-weight: normal;
-  margin-top: 5px;
+  padding-bottom: 15px;
+  margin: 10px;
 }
 
 .loginContainer {
@@ -35,6 +37,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 150px;
 }
 
 .loginContainer .pic {
@@ -74,8 +77,8 @@ nav{
     top: 0;
     right: 0;
     width: 270px;
-    color: #fff;
     display: flex;
+    align-items: flex-end;
     justify-content: space-around;
     padding: 3px;
     font-size: 16px;
@@ -85,4 +88,31 @@ nav{
     height: auto;
     width: 25px;
     margin-left: 5px;
+}
+
+
+
+.cancel{
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cancel .button{
+  width: 40px;
+  height: 40px;
+  background: rgb(82, 82, 82);
+  border-radius: 150%;
+}
+
+.cancel img{
+  transform: scale(.8);
+}
+
+.cancel span{
+  font-size: 14px;
+  padding: 4px;
 }
