@@ -83,6 +83,9 @@ nav{
     padding: 3px;
     font-size: 16px;
 }
+nav .wifi{
+  transform: translateY(-2px);
+}
 
 .batteryContainer img{
     height: auto;
